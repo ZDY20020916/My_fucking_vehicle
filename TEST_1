@@ -193,7 +193,7 @@ int pidController1(float targetVelocity,float currentVelocity)
 {
   float output,eI;
   eI = targetVelocity - currentVelocity;
-  float Kp = 45.0, Ti = 0.1,Td = 100.0;
+  float Kp = 50.0, Ti = 0.1,Td = 100.0;
   float q0 = Kp * (1 + T / Ti + Td / T);
   float q1 = -Kp * (1 + 2 * Td / T);
   float q2 = Kp * Td / T;
@@ -215,7 +215,7 @@ int pidController2(float targetVelocity,float currentVelocity)
 {
   float output,eI;
   eI = targetVelocity - currentVelocity;
-  float Kp = 45.0, Ti = 0.1, Td = 100.0;
+  float Kp = 50.0, Ti = 0.1, Td = 100.0;
   float q0 = Kp * (1 + T / Ti + Td / T);
   float q1 = -Kp * (1 + 2 * Td / T);
   float q2 = Kp * Td / T;
